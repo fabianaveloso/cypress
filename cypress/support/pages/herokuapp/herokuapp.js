@@ -11,11 +11,23 @@ class AutomationTest{
     clickaddbutton(){
         cy.get(this.add).click()
     }
-  clickRemoveButton(){
-        cy.get(this.remove).each(buttons=>{
-            cy.get(buttons).click()
-        })
+
+    clickRemoveBtn(){
+        cy.get(this.remove).first().click()
     }
+
+    clickRemoveAllButton(){
+        cy.get(this.remove).each((buttons)=>{
+            cy.get(buttons).click()
+        })    
+        cy.get('[onclick="deleteElement()"]').should('not.exist')
+    }
+
+    clickRemoveEachButton(){
+        cy.get(this.remove).then((buttons)=>{
+            cy.get(buttons).last().click()
+        }
+    )}
 }
 export default AutomationTest
 

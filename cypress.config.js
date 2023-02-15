@@ -7,7 +7,10 @@ module.exports = defineConfig({
       demoQA: "https://demoqa.com/",
       sauceDemo: "https://www.saucedemo.com/",
       todoMVC:"https://todomvc.com/examples/vanillajs/",
-      phpTravels: "https://phptravels.com/demo/"
+      phpTravels: "https://phptravels.com/demo/",
+      demoAut:"https://demo.automationtesting.in/Register.html",
+      herokuapp:"http://the-internet.herokuapp.com/"
+
     },
   }
 }) 

@@ -1,5 +1,5 @@
 const faker = require('faker-br')
-import Login from "../support/pages/login";
+import Login from "../support/pages/sauceTests/login";
 const login = new Login()
 var pass = 'secret_sauce'
 
